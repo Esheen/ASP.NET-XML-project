@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
+  <xs:complexType name="CustomerType">
+    <xs:attribute name="CustomerID"
+       type="xs:int"
+       use="required"/>
+    <xs:attribute name="Fname"
+       type="xs:string"
+       use="required"/>
+    <xs:attribute name="Lname"
+       type="xs:string"
+       use="required"/>
+    <xs:attribute name="St1"
+       type="xs:string"
+       use="required"/>
+    <xs:attribute name="City"
+       type="xs:string"
+       use="required"/>
+    <xs:attribute name="State"
+       type="xs:string"
+       use="required"/>
+  </xs:complexType>
+  <xs:complexType name="ProductType">
+    <xs:sequence>
+      <xs:element name="Customer"
+       maxOccurs="unbounded" type="CustomerType"/>
+    </xs:sequence>
+    <xs:attribute name="ProductID"
+       type="xs:int" use="required"/>
+    <xs:attribute name="ProductName"
+       type="xs:string" use="required"/>
+    <xs:attribute name="Size"
+       type="xs:int" use="required"/>
+    <xs:attribute name="Price"
+       type="xs:int" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="XOrderType">
+    <xs:sequence>
+      <xs:element name="Product"
+       maxOccurs="unbounded" type="ProductType"/>
+    </xs:sequence>
+    <xs:attribute name="date"
+       type="xs:date" use="required"/>
+  </xs:complexType>
+  <xs:element name="XOrder"
+  type="XOrderType" />
+</xs:schema>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="pampers.xslt"?>
+<XOrder date="2016-10-06"
+        xmlns="http://www.w3schools.com"
+        xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation= "http://www.w3schools.com pampers.xsd">
+  <Product ProductID="1" ProductName="Swaddlers" Size="1" Price="34">
+    <Customer CustomerID="1" Fname="Jane" Lname="Miller" St1="23 abd st" City="Pittsburgh" State="PA" />
+    <Customer CustomerID="2" Fname="Teddy" Lname="Billiam" St1="98 chd ave" City="California" State="CA" />
+  </Product>
+  <Product ProductID="3" ProductName="Swaddlers" Size="3" Price="36">
+    <Customer CustomerID="3" Fname="Roy" Lname="Joyce" St1="34 bsst st" City="Chicago" State="MI" />
+    <Customer CustomerID="7" Fname="Vickey" Lname="Derryl" St1="179 Forbes" City="Pittsburgh" State="CA" />
+  </Product>
+  <Product ProductID="5" ProductName="Swaddlers" Size="5" Price="34">
+    <Customer CustomerID="2" Fname="Teddy" Lname="Billiam" St1="98 chd ave" City="California" State="CA" />
+    <Customer CustomerID="4" Fname="Mike" Lname="Kerr" St1="3678 ALLE Ave" City="New York" State="NY" />
+  </Product>
+  <Product ProductID="10" ProductName="Cruisers" Size="5" Price="34">
+    <Customer CustomerID="6" Fname="Lara" Lname="Kisa" St1="12 Larrence Ave" City="Seattle" State="WA" />
+    <Customer CustomerID="7" Fname="Vickey" Lname="Derryl" St1="179 Forbes st" City="Pittsburgh" State="CA" />
+  </Product>
+</XOrder> 
